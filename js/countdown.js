@@ -25,7 +25,7 @@ function GetCount(ddate,iid){
 
   // if time is already past
   if(amount < 0){
-    document.getElementById(iid).innerHTML="Now!";
+    document.getElementById(iid).innerHTML="¡Ha comenzado!, Visitanos en la Facultad de Matemáticas";
   }
   // else date is still good
   else{
