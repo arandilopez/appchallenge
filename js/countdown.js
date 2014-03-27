@@ -11,6 +11,8 @@
 
 dateFuture1 = new Date(2014,2,28,18,0,0);
 
+// dateFuture1 = new Date(0, 0, 0, 24, 00,00);
+
 // TESTING: comment out the line below to print out the "dateFuture" for testing purposes
 //document.write(dateFuture +"<br />");
 
@@ -25,7 +27,7 @@ function GetCount(ddate,iid){
 
   // if time is already past
   if(amount < 0){
-    document.getElementById(iid).innerHTML="¡Ha comenzado!, Visitanos en la Facultad de Matemáticas";
+    document.getElementById(iid).innerHTML='<div class="countdown">¡Ha comenzado!, Visitanos en la Facultad de Matemáticas</div>';
   }
   // else date is still good
   else{
@@ -50,7 +52,7 @@ function GetCount(ddate,iid){
     out += (secs<=9?'0':'')+secs +" "+((secs==1)?"seg":"segs")+", ";
     out = out.substr(0,out.length-2);
     /*Escribir un nuevo div con el style para letra mas grande*/
-    document.getElementById(iid).innerHTML= '<div class="countdown">' + out + '</div>';
+    document.getElementById(iid).innerHTML= '<h2 class="now-time">Faltan:</h2><div class="countdown">' + out + '</div>';
 
     setTimeout(function(){GetCount(ddate,iid)}, 1000);
   }
