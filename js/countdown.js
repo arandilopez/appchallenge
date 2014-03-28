@@ -11,7 +11,7 @@
 
 dateFuture1 = new Date(2014,2,28,18,0,0);
 
-// dateFuture1 = new Date(0, 0, 0, 24, 00,00);
+// dateFuture1 = new Date(2014,2,29,19,0,0);
 
 // TESTING: comment out the line below to print out the "dateFuture" for testing purposes
 //document.write(dateFuture +"<br />");
