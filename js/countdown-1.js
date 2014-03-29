@@ -9,9 +9,9 @@
 // format: dateFuture1 = new Date(year,month-1,day,hour,min,sec)
 // example: dateFuture1 = new Date(2003,03,26,14,15,00) = April 26, 2003 - 2:15:00 pm
 
-dateFuture1 = new Date(2014,2,28,18,0,0);
+// dateFuture1 = new Date(2014,2,28,18,0,0);
 
-// dateFuture1 = new Date(2014,2,29,19,0,0);
+dateFuture1 = new Date(2014,2,29,18,40,0);
 
 // TESTING: comment out the line below to print out the "dateFuture" for testing purposes
 //document.write(dateFuture +"<br />");
@@ -27,7 +27,7 @@ function GetCount(ddate,iid){
 
   // if time is already past
   if(amount < 0){
-    document.getElementById(iid).innerHTML='<div class="countdown">¡Ha comenzado!, Visitanos en la Facultad de Matemáticas</div>';
+    document.getElementById(iid).innerHTML='<div class="countdown">El App Challenge ha concluido</div>';
   }
   // else date is still good
   else{
