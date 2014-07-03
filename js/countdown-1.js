@@ -27,7 +27,7 @@ function GetCount(ddate,iid){
 
   // if time is already past
   if(amount < 0){
-    document.getElementById(iid).innerHTML='<div class="countdown">El App Challenge ha concluido</div>';
+    document.getElementById(iid).innerHTML='<div class="countdown">Espéralo muy pronto</div>';
   }
   // else date is still good
   else{
