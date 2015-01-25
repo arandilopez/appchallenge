@@ -185,7 +185,7 @@ body {
 }
 
 .countdown{
-  font-size: 60pt;
+  font-size: 50pt;
   /*font-weight: bold;*/
 }
 
@@ -195,6 +195,11 @@ body {
 }
 
 #init{
-  font-size: 60pt;
+  font-size: 50pt;
   /*font-weight: bold;*/
+}
+
+#start-btn {
+  font-size: 30pt;
+  text-align: center;
 }
