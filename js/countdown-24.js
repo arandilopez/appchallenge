@@ -9,7 +9,7 @@
 // format: dateFuture1 = new Date(year,month-1,day,hour,min,sec)
 // example: dateFuture1 = new Date(2003,03,26,14,15,00) = April 26, 2003 - 2:15:00 pm
 
-// dateFuture1 = new Date(2014,2,28,18,0,0);
+ dateFuture1 = new Date(2015,0,31,18,0,0);
 
 // dateFuture1 = new Date(0, 0, 0, 24, 00,00);
 
