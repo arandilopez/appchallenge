@@ -2,7 +2,15 @@
  * Globals
  */
 
+@font-face {
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: normal;
+src: local('Bebas Neue'), url('../fonts/BebasNeue.woff') format('woff');
+}
+
 /* Links */
+
 a,
 a:focus,
 a:hover {
@@ -28,14 +36,19 @@ html,
 body {
   height: 100%;
   /*background-color: #333;*/
-  background-color: #181818;
+  /*background-color: #181818;*/
 }
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  text-shadow: 0 2px 4px rgba(0,0,0,.5);
+  /*box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
   /*background: url("../img/direction-2.jpg");*/
+  font-family: "Bebas Neue";
+  background: -webkit-linear-gradient(left, rgba(0, 167, 157, 1)30%, rgba(26, 77, 117, 1) 65%, rgba(38, 34, 98, 1) 90%); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(0, 167, 157, 1)30%, rgba(26, 77, 117, 1) 65%, rgba(38, 34, 98, 1) 90%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right,rgba(0, 167, 157, 1)30%, rgba(26, 77, 117, 1) 65%, rgba(38, 34, 98, 1) 90%); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(0, 167, 157, 1)30%, rgba(26, 77, 117, 1) 65%, rgba(38, 34, 98, 1) 90%); /* Standard syntax (must be last) */
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -56,7 +69,7 @@ body {
 
 /* Padding for spacing */
 .inner {
-  padding: 30px;
+  padding: 20px;
 }
 
 
@@ -64,7 +77,7 @@ body {
  * Header
  */
 .masthead-brand {
-  margin-top: 10px;
+  /*margin-top: 10px;*/
   margin-bottom: 10px;
 }
 
@@ -78,8 +91,7 @@ body {
   padding-left: 0;
   padding-right: 0;
   font-size: 16px;
-  font-weight: bold;
-  color: #fff; /* IE8 proofing */
+  /*font-weight: bold;*/  color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
   border-bottom: 2px solid transparent;
 }
@@ -169,20 +181,20 @@ body {
 
 .now-time{
   font-size: 35pt;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .countdown{
   font-size: 60pt;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .countdown2{
   font-size: 60pt;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 #init{
   font-size: 60pt;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }

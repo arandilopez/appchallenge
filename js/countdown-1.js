@@ -11,7 +11,8 @@
 
 // dateFuture1 = new Date(2014,2,28,18,0,0);
 
-dateFuture1 = new Date(2014,2,29,19,0,0);
+// dateFuture1 = new Date(2015,0,30,18,0,0);
+dateFuture1 = new Date(Date.UTC(2015, 0, 30, 24, 0, 0));
 
 // TESTING: comment out the line below to print out the "dateFuture" for testing purposes
 //document.write(dateFuture +"<br />");
@@ -46,9 +47,10 @@ function GetCount(ddate,iid){
 
     secs=Math.floor(amount);//seconds
 
+    out += (days<=9?'0':'')+days +" "+((days==1)?"día":"días")+", ";
     out += (hours<=9?'0':'')+hours +":";
     out += (mins<=9?'0':'')+mins +":";
-    out += (secs<=9?'0':'')+secs;
+    out += (secs<=9?'0':'')+secs + " horas"
     //out = out.substr(0,out.length-2);
     /*Escribir un nuevo div con el style para letra mas grande*/
     document.getElementById(iid).innerHTML= '<h2 class="now-time">Faltan:</h2><div class="countdown">' + out + '</div>';
