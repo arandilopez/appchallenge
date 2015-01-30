@@ -62,20 +62,20 @@ function GetCount(ddate, iid){
   }
 }
 
-// window.onload=function(){
-//   GetCount(dateFuture1 ,'countbox1');
-//   //you can add additional countdowns here (just make sure you create dateFuture2 and countbox2 etc for each)
-// };
+window.onload=function(){
+  GetCount(dateFuture1 ,'countbox1');
+  //you can add additional countdowns here (just make sure you create dateFuture2 and countbox2 etc for each)
+};
 
-$(document).ready(function() {
-  $('#counter').after('<p><button class="btn btn-lg btn-info" id="start-btn">¡Comenzar!</button></p>');
-  $("#start-btn").on('click', function(event) {
-    event.preventDefault();
-    /* Act on the event */
-    // body...
-    $("#start-btn").attr('disabled', 'disabled');
-    // $("#init").hide();
-    $(this).hide();
-    GetCount( 'undefined' ,'countbox1');
-  });
-});
+// $(document).ready(function() {
+//   $('#counter').after('<p><button class="btn btn-lg btn-info" id="start-btn">¡Comenzar!</button></p>');
+//   $("#start-btn").on('click', function(event) {
+//     event.preventDefault();
+//     /* Act on the event */
+//     // body...
+//     $("#start-btn").attr('disabled', 'disabled');
+//     // $("#init").hide();
+//     $(this).hide();
+//     GetCount( 'undefined' ,'countbox1');
+//   });
+// });
