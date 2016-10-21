@@ -12,7 +12,7 @@
 // dateFuture1 = new Date(2014,2,28,18,0,0);
 
 // dateFuture1 = new Date(2015,0,30,18,0,0);
-dateFuture1 = new Date(Date.UTC(2015, 0, 30, 24, 0, 0));
+dateFuture1 = new Date(Date.UTC(2016, 10, 4, 24, 0, 0));
 console.log(dateFuture1);
 // TESTING: comment out the line below to print out the "dateFuture" for testing purposes
 //document.write(dateFuture +"<br />");
