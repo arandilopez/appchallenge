@@ -21,84 +21,93 @@
   <link href="css/cover.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-    </head>
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
 
-    <body>
+<body>
 
-      <div class="site-wrapper">
+  <div class="site-wrapper">
 
-        <div class="site-wrapper-inner">
+    <div class="site-wrapper-inner">
 
-          <div class="cover-container">
+      <div class="cover-container">
 
-            <div class="masthead clearfix">
-              <div class="inner">
-                <center>
-                <div class="masthead-brand">
-                  <img src="img/banner2.png" class="img-responsive" alt="Campus Universidad">
-                </div>
-                </center>
-                <ul class="nav masthead-nav">
-                  <li><a href="https://www.facebook.com/cestudiantilfmat/" title="Página Facebook"><i class="fa fa-facebook"></i> | Facebook</a></li>
-                  <li><a href="https://twitter.com/CE_FMAT" title="Página Twitter"><i class="fa fa-twitter"></i> | Twitter</a></li>
-                  <!-- <li><a href="http://instagram.com/consejofmat/" title="Página Instagram"><i class="fa fa-instagram"></i> | Instagram</a></li> -->
-                </ul>
+        <div class="masthead clearfix">
+          <div class="inner">
+            <center>
+              <div class="masthead-brand">
+                <img src="img/ce.png" class="img-responsive" height="150px" width="150px">
+              </div>
+            </center>
+            <ul class="nav masthead-nav">
+              <li><a href="https://www.facebook.com/cestudiantilfmat/" title="Página Facebook"><i class="fa fa-facebook"></i> | Facebook</a></li>
+              <li><a href="https://twitter.com/CE_FMAT" title="Página Twitter"><i class="fa fa-twitter"></i> | Twitter</a></li>
+              <!-- <li><a href="http://instagram.com/consejofmat/" title="Página Instagram"><i class="fa fa-instagram"></i> | Instagram</a></li> -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="inner cover" id="app">
+          <center>
+            <img src="img/app1.png" class="img-responsive" alt="App Challenge">
+          </center>
+          <p class="lead" id="counter">
+            <div id="countbox1">
+              <h2 class="now-time">Faltan:</h2>
+              <div class="countdown">
+                <span v-if="now < date">
+                  {{days | two_digits}} {{days_text}},
+                  {{hours | two_digits}}:{{minutes | two_digits}}:{{seconds | two_digits}} horas
+                </span>
+                <span v-if="!(now < date)">
+                  Espéralo muy pronto
+                </span>
               </div>
             </div>
-
-            <div class="inner cover" id="app">
-              <center>
-                <img src="img/app1.png" class="img-responsive" alt="App Challenge">
-              </center>
-              <p class="lead" id="counter">
-                <div id="countbox1">
-                  <h2 class="now-time">Faltan:</h2>
-                  <div class="countdown">
-                    <span v-if="now < date">
-                      {{days | two_digits}} {{days_text}},
-                      {{hours | two_digits}}:{{minutes | two_digits}}:{{seconds | two_digits}} horas
-                    </span>
-                    <span v-if="!(now < date)">
-                      Espéralo muy pronto
-                    </span>
-                  </div>
-                </div>
-              </p>
-              <p class="lead">
-                Sigue en nuestras redes sociales estas 24 hrs ininterrumpidas de programaci&oacute;n
-              </p>
+          </p>
+          <p class="lead">
+            Sigue en nuestras redes sociales estas 24 hrs ininterrumpidas de programaci&oacute;n
+          </p>
+          <div class="row text-center">
+            <div class="col-md-6">
               <p class="lead">
                 <a href="http://www.matematicas.uady.mx/static/files/avisos/2016/convocatoria-appchallenge-2016.pdf" target="_blank">Descarga la convocatoria</a>
               </p>
             </div>
-
-            <div class="mastfoot">
-              <div class="inner">
-                <p> <a href="http://arandilopez.github.io">Arandi López</a> &copy; 2016, Consejo Estudiantil FMAT. Powered by Github Pages. Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-              </div>
+            <div class="col-md-6">
+              <p class="lead">
+                <a href="/sponsors.html">Nuestros patrocinadores</a>
+              </p>
             </div>
-
           </div>
+        </div>
 
+        <div class="mastfoot">
+          <div class="inner">
+            <p> <a href="http://arandilopez.github.io">Arandi López</a> &copy; 2016, Consejo Estudiantil FMAT. Powered by Github Pages. Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+          </div>
         </div>
 
       </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
-    <!-- Latest compiled and minified JS -->
-    <script src="//code.jquery.com/jquery.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="//unpkg.com/vue@2.0.3/dist/vue.min.js" charset="utf-8"></script>
+    </div>
 
-    <script src="js/app.js" type="text/javascript"></script>
-    <!-- <script src="js/countdown-1.js" type="text/javascript"></script> -->
+  </div>
 
-  </body>
-  </html>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+  <!-- Latest compiled and minified JS -->
+  <script src="//code.jquery.com/jquery.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="//unpkg.com/vue@2.0.3/dist/vue.min.js" charset="utf-8"></script>
+
+  <script src="js/app.js" type="text/javascript"></script>
+  <!-- <script src="js/countdown-1.js" type="text/javascript"></script> -->
+
+</body>
+</html>

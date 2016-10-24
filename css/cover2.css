@@ -1,0 +1,202 @@
+/*
+ * Globals
+ */
+
+@font-face {
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: normal;
+src: local('Bebas Neue'), url('../fonts/BebasNeue.woff') format('woff');
+}
+
+/* Links */
+
+a,
+a:focus,
+a:hover {
+  color: #444444;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  /*background-color: #333;*/
+  /*background-color: #181818;*/
+}
+body {
+  color: #333;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 100px rgba(0,0,0,.3);
+  background-color: #ffffff;
+  font-family: "Bebas Neue";
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 20px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  /*margin-top: 10px;*/
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  /*font-weight: bold;*/  color: #2a2a2a; /* IE8 proofing */
+  color: rgba(40, 40, 40, 0.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #2a2a2a;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #2a2a2a; /* IE8 proofing */
+  color: rgba(40,40,40,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 960px;
+  }
+}
+
+.title-app{
+  font-size: 40pt;
+  font-weight: bold;
+}
+
+.now-time{
+  font-size: 35pt;
+  /*font-weight: bold;*/
+}
+
+.countdown{
+
+  font-size: 50pt;
+  /*font-weight: bold;*/
+}
+
+.countdown2{
+  font-size: 60pt;
+  /*font-weight: bold;*/
+}
+
+#init{
+  font-size: 50pt;
+  /*font-weight: bold;*/
+}
+
+#start-btn {
+  font-size: 30pt;
+  text-align: center;
+}
