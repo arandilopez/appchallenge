@@ -56,14 +56,28 @@
           </center>
           <p class="lead" id="counter">
             <div id="countbox1">
-              <h2 class="now-time">Faltan:</h2>
               <div class="countdown">
-                <span v-if="now < date">
-                  {{days | two_digits}} {{days_text}},
-                  {{hours | two_digits}}:{{minutes | two_digits}}:{{seconds | two_digits}} horas
+                <span v-if="!has_begun">
+                  <first inline-template :date="date" :now="now">
+                    <div>
+                      <h2 class="now-time">Faltan:</h2>
+                      {{days | two_digits}} {{days_text}},
+                      {{hours | two_digits}}:{{minutes | two_digits}}:{{seconds | two_digits}} horas
+                    </div>
+                  </first>
                 </span>
-                <span v-if="!(now < date)">
-                  Espéralo muy pronto
+                <span v-if="has_begun">
+                  <down-counter inline-template :date="finish_date" :now="now" :started="started">
+                    <div>
+                      <h2 class="now-time">Timpo restante:</h2>
+                      <span v-if="started">
+                        {{hours | two_digits}}:{{minutes | two_digits}}:{{seconds | two_digits}} horas
+                      </span>
+                      <span v-if="!started">
+                        24:00:00 horas
+                      </span>
+                    </div>
+                  </down-counter>
                 </span>
               </div>
             </div>
@@ -105,7 +119,18 @@
   <script src="//code.jquery.com/jquery.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <script src="//unpkg.com/vue@2.0.3/dist/vue.min.js" charset="utf-8"></script>
-
+  <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyD7eWHGyrCPKf_Uu2_Rj39K3NwWB7Ue7Fw",
+      authDomain: "project-140727231782415250.firebaseapp.com",
+      databaseURL: "https://project-140727231782415250.firebaseio.com",
+      storageBucket: "project-140727231782415250.appspot.com",
+      messagingSenderId: "104067320126"
+    };
+    firebase.initializeApp(config);
+  </script>
   <script src="js/app.js" type="text/javascript"></script>
   <!-- <script src="js/countdown-1.js" type="text/javascript"></script> -->
 
