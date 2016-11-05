@@ -69,7 +69,7 @@
                 <span v-if="has_begun">
                   <down-counter inline-template :date="finish_date" :now="now" :started="started">
                     <div>
-                      <h2 class="now-time">Timpo restante:</h2>
+                      <h2 class="now-time">Tiempo restante:</h2>
                       <span v-if="started">
                         {{hours | two_digits}}:{{minutes | two_digits}}:{{seconds | two_digits}} horas
                       </span>
